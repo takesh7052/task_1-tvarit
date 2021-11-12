@@ -1,0 +1,4 @@
+Requirement:
+* Install python3.8 and above
+* Any suitable IDE for python
+* github link: https://github.com/takesh7052/task_1-tvarit
