@@ -1,4 +1,3 @@
-
 #check given condition
 def fix_teen(num):
   if num >12 and num <20 and not num ==15 and not num ==16:
@@ -16,16 +15,17 @@ def isNumber(s):
      return True
 
 # driver code
-l = [int(x) for x in input("Enter three value: ").split()]
+l = [x for x in input("Enter three value: ").split()]
+flag =0
 
-#for i in l:
-#    if(isNumber(i) == False):
-#        print("All inputs must be numeric")
+for i in l:
+    if(isNumber(i) == False):
+        print("All inputs must be numeric")
+        flag =1
    
 if(len(l) != 3):
     print("Exactly three numbers are required")
-else:
-    a, b, c = [l[i] for i in range(3)]    
-
-sum = no_teen_sum(a, b, c)
-print(sum)
+if(flag != 1):
+    a, b, c = [l[i] for i in range(3)]   
+    sum = no_teen_sum(int(a), int(b), int(c))
+    print(sum) 
